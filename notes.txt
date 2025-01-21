@@ -1,0 +1,6 @@
+Squid game triangle jaascript questions
+
+- Bubble up and bubble down
+- in aingle html page write scraping script for learn dom
+
+- Functions and Methods from Apna College

@@ -132,3 +132,70 @@ console.log(newDate.toLocaleString('default',{
 
 // Arrays in JavaScript
 
+const myArr = [0,1,2,3,4,5 ]
+
+
+// Objects
+
+// singleton
+// object literals
+
+// Define and Use Symbol
+const mySym = Symbol("key1");
+
+const JsUser = {
+    name: "Hitesh", 
+    "full name":"Hitesh Jethava",
+    [mySym]: "mykey1", // Symbol
+    age:21,
+    location: "Rajkot",
+    email:"hitesh@gmail.com",
+    isLoggedIn : false,
+    lastLoginDays:["Monday","Saturday"]
+}
+
+console.log(JsUser.email);
+console.log(JsUser["email"]);
+console.log(JsUser["full name"]);
+console.log(JsUser[mySym]);
+
+JsUser.email="hiteshjethava@gmail.com"
+// Object.freeze(JsUser);
+JsUser.email="hj@gmail.com";
+// console.log(JsUser);
+
+// with functions
+
+JsUser.greeting = function(){
+    console.log("Hello JS User");
+}
+
+JsUser.greetingTwo = function(){
+    console.log(`Hello JS user, ${this.name}`);  // `` string interpolation
+}
+// console.log(JsUser);
+console.log(JsUser.greeting());
+
+console.log(JsUser.greetingTwo());
+
+
+// const newUser = new Object();
+const newUser = {}
+newUser.id = "123abc";
+newUser.name="Hitesh";
+newUser.isLoggedIn = false;
+console.log(newUser);
+
+const regularUser = {
+    email : "abc@gmail.com",
+    fullname:{
+        userfullname:{
+            firstname:"hitesh",
+            lastname:"jethava"
+        }
+    }
+}
+
+console.log(regularUser.fullname.userfullname.firstname);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
